@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Eat-da-burger</title>
+
+    <!-- Bootstrap 4.2.1 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/burger_style.css">
+  </head>
+  <body>
+    <div class="container">
+      <img src="/assets/img/burger.png" alt="Burger Logo" width="20%">
+      
+      <br>
+
+      <h1>Eat-Da-Burger!</h1>
+
+      {{{body}}}
+
+      <br>
+
+      <form action="api/burger" method="POST">
+        <div class="row">
+          <div class="col-md-4">
+          </div>
+          <div class="col-md-4">
+            <textarea class="form-control" type="text" name="burgerName" ></textarea>
+          </div>
+          <div class="col-md-4">
+          </div>  
+        </div>
+        <br>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
+
+      <br>
+
+      <p>Enter a burger you want to eat. Click the "Submit" button.</p>
+    </div>
+
+    <!-- Bootstrap 4.2.1 JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>
